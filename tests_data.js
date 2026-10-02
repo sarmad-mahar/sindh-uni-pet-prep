@@ -1,0 +1,2197 @@
+    const TESTS_DB = [
+      {
+        id: 1,
+        title: "Test 01: SU Past Paper 2013",
+        source: "Sindh University 2013 Entrance Paper",
+        type: "past_paper",
+        tag: "Authentic Paper",
+        desc: "Actual English, General Knowledge & General Science questions asked in session 2013.",
+        questions: [
+          // English (1-10)
+          {
+            id: 101,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: VERDICT",
+            options: ["Decide", "Decision", "Command", "Order"],
+            answer: 1,
+            rationale: "Verdict means an authoritative decision or judgment on an issue, especially in a court of law."
+          },
+          {
+            id: 102,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: ESCALATION",
+            options: ["Highlight", "Increase", "Publish", "Light"],
+            answer: 1,
+            rationale: "Escalation signifies a rapid increase, intensification, or rise in extent or intensity."
+          },
+          {
+            id: 103,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: BUG",
+            options: ["Bother", "Trouble", "Quarrel", "Tension"],
+            answer: 0,
+            rationale: "As a verb, to 'bug' someone means to annoy, pester, or bother them repeatedly."
+          },
+          {
+            id: 104,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: DWARF",
+            options: ["Animal", "Dwell", "Short", "Small"],
+            answer: 2,
+            rationale: "In past papers, 'Dwarf' is synonymized with 'Short' denoting someone or something of unusually small stature."
+          },
+          {
+            id: 105,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: AMALGAMATION",
+            options: ["Combination", "Crowd", "Thinking", "Understanding"],
+            answer: 0,
+            rationale: "Amalgamation refers to the action, process, or result of combining or uniting multiple things into one."
+          },
+          {
+            id: 106,
+            subject: "english",
+            q: "Complete the sentence: 'I am very anxious ____ him.'",
+            options: ["about", "concerning", "for", "that"],
+            answer: 2,
+            rationale: "In standard idiomatic entrance English, being anxious 'for' someone expresses protective concern for their well-being."
+          },
+          {
+            id: 107,
+            subject: "english",
+            q: "Fill in the blank: 'He was ____ injured in the last match.'",
+            options: ["very much", "badly", "well", "very well"],
+            answer: 1,
+            rationale: "The adverb 'badly' correctly collocates with 'injured' to describe the severity of injury."
+          },
+          {
+            id: 108,
+            subject: "english",
+            q: "Identify the part of speech: 'What is your name?' Here WHAT is a:",
+            options: ["Adverb", "Verb", "Interjection", "Pronoun"],
+            answer: 3,
+            rationale: "'What' functions here as an interrogative pronoun, taking the place of the unknown noun being inquired about."
+          },
+          {
+            id: 109,
+            subject: "english",
+            q: "Choose the correct Passive Voice for: 'Did he buy mangoes?'",
+            options: ["Did mangoes bought by him?", "Were mangoes bought by him?", "Are mangoes bought by him?", "Was mangoes bought by him?"],
+            answer: 1,
+            rationale: "Past simple interrogative takes: Was/Were + Object + Past Participle (V3) + by + Subject. 'Mangoes' is plural, so 'Were mangoes bought by him?'"
+          },
+          {
+            id: 110,
+            subject: "english",
+            q: "Choose the correct Passive Voice for imperative sentence: 'Wash your face.'",
+            options: ["You wash your face.", "Let your face be washed.", "Your face must wash.", "Let face be wash."],
+            answer: 1,
+            rationale: "Imperative sentences in passive voice follow the structure: 'Let + Object + be + Past Participle'."
+          },
+
+          // General Knowledge (11-18)
+          {
+            id: 111,
+            subject: "gk",
+            q: "When did Pakistan officially become a member of the United Nations (UNO)?",
+            options: ["14 August, 1947", "30 September, 1947", "23 March, 1948", "24 October, 1947"],
+            answer: 1,
+            rationale: "Pakistan joined the United Nations on September 30, 1947, shortly after independence."
+          },
+          {
+            id: 112,
+            subject: "gk",
+            q: "The National Anthem of Pakistan was officially approved in:",
+            options: ["August 1947", "August 1954", "March 1956", "October 1958"],
+            answer: 1,
+            rationale: "The Government of Pakistan officially adopted the National Anthem composed by Hafiz Jalandhari in August 1954."
+          },
+          {
+            id: 113,
+            subject: "gk",
+            q: "The capital city of the Hashemite Kingdom of Jordan is:",
+            options: ["Damascus", "Beirut", "Amman", "Cairo"],
+            answer: 2,
+            rationale: "Amman is the capital and largest city of Jordan."
+          },
+          {
+            id: 114,
+            subject: "gk",
+            q: "What is the official currency of Indonesia?",
+            options: ["Rupiah", "Ringgit", "Baht", "Riyal"],
+            answer: 0,
+            rationale: "The Indonesian Rupiah (IDR) is the official currency of Indonesia."
+          },
+          {
+            id: 115,
+            subject: "gk",
+            q: "The largest barrage in Pakistan (and historical pride of Sindh) is:",
+            options: ["Guddu Barrage", "Sukkur Barrage", "Kotri Barrage", "Chashma Barrage"],
+            answer: 1,
+            rationale: "Sukkur Barrage (originally Lloyd Barrage), opened in 1932, is the largest irrigation barrage in Pakistan."
+          },
+          {
+            id: 116,
+            subject: "gk",
+            q: "How many times has Pakistan won the Men's Field Hockey World Cup?",
+            options: ["2 times", "3 times", "4 times", "5 times"],
+            answer: 2,
+            rationale: "Pakistan holds the world record having won the Hockey World Cup 4 times (1971, 1978, 1982, 1994)."
+          },
+          {
+            id: 117,
+            subject: "gk",
+            q: "The historic Khyber Pass connects Pakistan with which neighboring country?",
+            options: ["Iran", "China", "Afghanistan", "India"],
+            answer: 2,
+            rationale: "Khyber Pass is a vital mountain pass linking Khyber Pakhtunkhwa in Pakistan with Nangarhar Province in Afghanistan."
+          },
+          {
+            id: 118,
+            subject: "gk",
+            q: "Which is the shortest Surah in the Holy Quran?",
+            options: ["Surah Al-Ikhlas", "Surah Al-Kausar", "Surah An-Nas", "Surah Al-Falaq"],
+            answer: 1,
+            rationale: "Surah Al-Kausar consists of only 3 verses, making it the shortest Surah of the Holy Quran."
+          },
+
+          // General Science (19-25)
+          {
+            id: 119,
+            subject: "science",
+            q: "What is the chemical formula of Acetic Acid (the acid found in vinegar)?",
+            options: ["HCl", "H2SO4", "CH3COOH", "HNO3"],
+            answer: 2,
+            rationale: "Acetic acid is ethanoic acid, having the molecular chemical formula CH3COOH."
+          },
+          {
+            id: 120,
+            subject: "science",
+            q: "Louis Pasteur made groundbreaking discoveries primarily as a:",
+            options: ["Astronomer", "Physicist only", "Microbiologist and Chemist", "Geologist"],
+            answer: 2,
+            rationale: "Louis Pasteur was a French chemist and microbiologist renowned for vaccination, microbial fermentation, and pasteurization."
+          },
+          {
+            id: 121,
+            subject: "science",
+            q: "In the International System of Units (SI), the amount of a substance is measured in:",
+            options: ["Gram", "Mole", "Kilogram", "Candela"],
+            answer: 1,
+            rationale: "The 'Mole' (mol) is the SI base unit representing the amount of substance."
+          },
+          {
+            id: 122,
+            subject: "science",
+            q: "Who is credited with inventing the Radio?",
+            options: ["Thomas Edison", "Alexander Graham Bell", "Guglielmo Marconi", "Nikola Tesla"],
+            answer: 2,
+            rationale: "Italian inventor Guglielmo Marconi is credited for inventing the practical radio communications system."
+          },
+          {
+            id: 123,
+            subject: "science",
+            q: "What molecule is famously termed the 'Energy Currency' of biological cells?",
+            options: ["DNA", "RNA", "ATP (Adenosine Triphosphate)", "Glucose"],
+            answer: 2,
+            rationale: "ATP captures and transfers chemical energy released from food for cellular work."
+          },
+          {
+            id: 124,
+            subject: "science",
+            q: "In the modern periodic table, chemical elements are arranged in increasing order of their:",
+            options: ["Atomic number", "Atomic weight", "Mass density", "Number of neutrons"],
+            answer: 0,
+            rationale: "Moseley's modern periodic law arranges elements according to increasing atomic number (number of protons)."
+          },
+          {
+            id: 125,
+            subject: "science",
+            q: "Which alternating chemical components form the structural 'backbone' of DNA?",
+            options: ["Nitrogen bases only", "Sugar and Phosphate", "Amino acids", "Lipids and Proteins"],
+            answer: 1,
+            rationale: "The sugar (deoxyribose) and phosphate groups form the repeating structural backbone of each DNA strand."
+          }
+        ]
+      },
+
+      {
+        id: 2,
+        title: "Test 02: SU Past Paper 2014",
+        source: "Sindh University 2014 Entrance Paper",
+        type: "past_paper",
+        tag: "Authentic Paper",
+        desc: "Authentic MCQs directly extracted from Session 2014 entry test.",
+        questions: [
+          // English (1-10)
+          {
+            id: 201,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: ACT",
+            options: ["Clear", "Display", "Athwart", "Set right"],
+            answer: 1,
+            rationale: "To act or perform frequently means to display or represent an action."
+          },
+          {
+            id: 202,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: ALIKE",
+            options: ["Proxy", "Permit", "Deter", "Similar"],
+            answer: 3,
+            rationale: "Alike means having resemblance or being identical/similar to something."
+          },
+          {
+            id: 203,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: BEG",
+            options: ["Insist", "Prior to", "Aloft", "Appeal"],
+            answer: 3,
+            rationale: "To beg means to ask earnestly or make an appeal for aid or mercy."
+          },
+          {
+            id: 204,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: CALM",
+            options: ["Surmise", "Excite", "Distress", "Stir"],
+            answer: 1,
+            rationale: "Calm denotes peacefulness and tranquility; excite is its direct antonym."
+          },
+          {
+            id: 205,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: ACCEPT",
+            options: ["Refuse", "Confirm", "Approve", "Intent"],
+            answer: 0,
+            rationale: "Accepting an offer or proposal is the opposite of refusing it."
+          },
+          {
+            id: 206,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Abnormale", "Abnarmal", "Abnormal", "Abnarmale"],
+            answer: 2,
+            rationale: "The correct spelling is 'Abnormal'."
+          },
+          {
+            id: 207,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Acumulate", "Accumulate", "Accomulate", "Accumolate"],
+            answer: 1,
+            rationale: "The correct spelling is 'Accumulate' (double c, single m)."
+          },
+          {
+            id: 208,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Bankcurpt", "Bankcorupt", "Bankrupt", "Bankcrupt"],
+            answer: 2,
+            rationale: "The correct spelling is 'Bankrupt'."
+          },
+          {
+            id: 209,
+            subject: "english",
+            q: "Fill in the blank: 'You ____ not cut trees of a public garden.'",
+            options: ["should", "could", "would", "must"],
+            answer: 3,
+            rationale: "'Must not' expresses strong obligation and legal prohibition."
+          },
+          {
+            id: 210,
+            subject: "english",
+            q: "Fill in the blank: 'All women were getting ____ the bus.'",
+            options: ["in", "into", "on", "at"],
+            answer: 2,
+            rationale: "In English prepositions of transport, we get 'on' or 'off' large public transport like buses, trains, and planes."
+          },
+
+          // General Knowledge (11-18)
+          {
+            id: 211,
+            subject: "gk",
+            q: "The Islamic Hijri calendar officially begins with which sacred month?",
+            options: ["Ramadan", "Muharram", "Safar", "Rabi-ul-Awwal"],
+            answer: 1,
+            rationale: "Muharram is the first month of the Islamic lunar calendar."
+          },
+          {
+            id: 212,
+            subject: "gk",
+            q: "The Urs of revered Sindhi Sufi poet Hazrat Shah Abdul Latif Bhittai is commemorated in the month of:",
+            options: ["Muharram", "Safar", "Rajab", "Shawwal"],
+            answer: 1,
+            rationale: "The Urs of Shah Abdul Latif Bhittai begins on the 14th of Safar every year in Bhit Shah."
+          },
+          {
+            id: 213,
+            subject: "gk",
+            q: "The magnificent Badshahi Mosque in Lahore was commissioned and built by:",
+            options: ["Emperor Akbar", "Shah Jahan", "Mughal Emperor Aurangzeb", "Babur"],
+            answer: 2,
+            rationale: "Aurangzeb Alamgir constructed the Badshahi Mosque in 1671–1673."
+          },
+          {
+            id: 214,
+            subject: "gk",
+            q: "Who made history as the first democratically elected female Prime Minister in any Muslim-majority nation?",
+            options: ["Begum Khaleda Zia", "Mohtarma Benazir Bhutto", "Sheikh Hasina", "Tansu Ciller"],
+            answer: 1,
+            rationale: "Mohtarma Benazir Bhutto became Prime Minister of Pakistan on December 2, 1988."
+          },
+          {
+            id: 215,
+            subject: "gk",
+            q: "The breathtaking Hunza Valley is situated in which northern territory of Pakistan?",
+            options: ["Khyber Pakhtunkhwa", "Gilgit-Baltistan", "Azad Kashmir", "Punjab"],
+            answer: 1,
+            rationale: "Hunza is a mountainous valley located in the Gilgit-Baltistan region of Pakistan."
+          },
+          {
+            id: 216,
+            subject: "gk",
+            q: "The largest share of Pakistan's historic export earnings is derived from:",
+            options: ["Rice", "Leather goods", "Cotton and Textiles", "Sports goods"],
+            answer: 2,
+            rationale: "Cotton and cotton-manufactured textiles form over 55-60% of Pakistan's total merchandise exports."
+          },
+          {
+            id: 217,
+            subject: "gk",
+            q: "How many days are there in a Leap Year?",
+            options: ["364", "365", "366", "367"],
+            answer: 2,
+            rationale: "A leap year contains 366 days due to the extra 29th day added to February."
+          },
+          {
+            id: 218,
+            subject: "gk",
+            q: "What is the capital city of Egypt?",
+            options: ["Alexandria", "Cairo", "Giza", "Luxor"],
+            answer: 1,
+            rationale: "Cairo is the historic capital and largest metropolis of Egypt."
+          },
+
+          // General Science (19-25)
+          {
+            id: 219,
+            subject: "science",
+            q: "What is the chemical formula for common table salt?",
+            options: ["KCl", "NaCl", "CaCl2", "Na2CO3"],
+            answer: 1,
+            rationale: "Common salt is Sodium Chloride, chemical formula NaCl."
+          },
+          {
+            id: 220,
+            subject: "science",
+            q: "Unlike most amphibians and mammals, a frog naturally lacks:",
+            options: ["Brain", "Ribs", "Heart", "Lungs"],
+            answer: 1,
+            rationale: "Frogs do not possess ribs; their thoracic cavity is supported by the pelvic girdle and spinal vertebrae."
+          },
+          {
+            id: 221,
+            subject: "science",
+            q: "In the human gastrointestinal tract, chemical digestion of starch begins in the:",
+            options: ["Stomach", "Mouth", "Small Intestine", "Liver"],
+            answer: 1,
+            rationale: "Digestion of starch begins in the mouth with the action of the enzyme salivary amylase (ptyalin)."
+          },
+          {
+            id: 222,
+            subject: "science",
+            q: "The Earth's stratospheric Ozone Layer shields life on Earth by restricting:",
+            options: ["Infrared rays", "Cosmic radiation", "Ultraviolet (UV) radiation", "Microwaves"],
+            answer: 2,
+            rationale: "The ozone layer (O3) absorbs hazardous biological ultraviolet-B (UV) rays from the Sun."
+          },
+          {
+            id: 223,
+            subject: "science",
+            q: "What is the common chemical name of 'Laughing Gas'?",
+            options: ["Nitric oxide", "Nitrogen dioxide", "Nitrous oxide", "Carbon monoxide"],
+            answer: 2,
+            rationale: "Nitrous oxide (N2O) is widely known as laughing gas for its euphoric anesthetic properties."
+          },
+          {
+            id: 224,
+            subject: "science",
+            q: "What is the hardest naturally occurring mineral/substance known on Earth?",
+            options: ["Granite", "Quartz", "Diamond", "Iron"],
+            answer: 2,
+            rationale: "Diamond is an allotrope of carbon with a Mohs hardness of 10, the hardest natural mineral."
+          },
+          {
+            id: 225,
+            subject: "science",
+            q: "Which allotrope of Carbon is widely utilized as the 'lead' in writing pencils?",
+            options: ["Silicon", "Phosphorus", "Graphite", "Charcoal"],
+            answer: 2,
+            rationale: "Graphite mixed with clay forms pencil lead because its sliding layered atomic lattice marks paper easily."
+          }
+        ]
+      },
+
+      {
+        id: 3,
+        title: "Test 03: SU Past Paper 2015",
+        source: "Sindh University 2015 Entrance Paper",
+        type: "past_paper",
+        tag: "Authentic Paper",
+        desc: "Extracted from 2015 past paper across English, GK & Science.",
+        questions: [
+          // English (1-10)
+          {
+            id: 301,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: TERRIBLE",
+            options: ["Fluent", "Stammer", "Tragic", "Happy"],
+            answer: 2,
+            rationale: "Terrible means causing great shock, distress, or horror; tragic is its closest synonym."
+          },
+          {
+            id: 302,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: NOTICEABLE",
+            options: ["Well-Dressed", "Friendly", "Polished", "Prominent"],
+            answer: 3,
+            rationale: "Noticeable means easily seen, catching attention, or prominent."
+          },
+          {
+            id: 303,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: SENSE",
+            options: ["Obstruct", "Recover", "Let free", "Detect"],
+            answer: 3,
+            rationale: "To sense something means to perceive or detect it through sensory organs."
+          },
+          {
+            id: 304,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: CONCEAL",
+            options: ["Criticise", "Disclose", "Enforce", "Collect"],
+            answer: 1,
+            rationale: "Conceal means to hide or keep secret; disclose means to reveal or make public."
+          },
+          {
+            id: 305,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: FLIPPANT",
+            options: ["Vitality", "Weariness", "Solemn", "Umbrage"],
+            answer: 2,
+            rationale: "Flippant means not showing serious or respectful attitude; solemn means grave and deeply serious."
+          },
+          {
+            id: 306,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Establishment", "Establishement", "Eastiblishment", "Establashement"],
+            answer: 0,
+            rationale: "The correct spelling is 'Establishment'."
+          },
+          {
+            id: 307,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Transparent", "Transperent", "Transpirent", "Transparant"],
+            answer: 0,
+            rationale: "The correct spelling is 'Transparent'."
+          },
+          {
+            id: 308,
+            subject: "english",
+            q: "Fill in the correct preposition: 'The land was divided ____ the two sisters and the two brothers.'",
+            options: ["between", "among", "with", "into"],
+            answer: 1,
+            rationale: "When distributing among more than two entities (four persons here), 'among' is standard."
+          },
+          {
+            id: 309,
+            subject: "english",
+            q: "Fill in the blank: 'He was excluded from the team ____ his supervisor.'",
+            options: ["from", "on", "by", "for"],
+            answer: 2,
+            rationale: "In passive voice constructions, the agent who executes the action is preceded by 'by'."
+          },
+          {
+            id: 310,
+            subject: "english",
+            q: "Choose the correct Passive Voice for: 'Why are you beating him?'",
+            options: ["Why was he being beaten by you?", "Why is he being beaten by you?", "Why has he been beaten by you?", "Why is him being beaten by you?"],
+            answer: 1,
+            rationale: "Present continuous interrogative passive: 'Why + is/am/are + Object + being + V3 + by + Subject?'"
+          },
+
+          // General Knowledge (11-18)
+          {
+            id: 311,
+            subject: "gk",
+            q: "What is the total number of Surahs in the Holy Quran?",
+            options: ["112", "113", "114", "115"],
+            answer: 2,
+            rationale: "There are 114 Surahs in the Holy Quran, beginning with Al-Fatiha and ending with An-Nas."
+          },
+          {
+            id: 312,
+            subject: "gk",
+            q: "The divine revelation of the Holy Quran to Prophet Muhammad (SAW) was completed over a span of:",
+            options: ["10 years", "20 years", "23 years", "25 years"],
+            answer: 2,
+            rationale: "The Holy Quran was revealed incrementally over approximately 23 years (610 to 632 AD)."
+          },
+          {
+            id: 313,
+            subject: "gk",
+            q: "Which is the longest (largest) Surah in the Holy Quran?",
+            options: ["Surah Al-Imran", "Surah An-Nisa", "Surah Al-Baqarah", "Surah Al-Ma'idah"],
+            answer: 2,
+            rationale: "Surah Al-Baqarah contains 286 verses and is the longest chapter in the Holy Quran."
+          },
+          {
+            id: 314,
+            subject: "gk",
+            q: "Who served as the very first Prime Minister of Pakistan?",
+            options: ["Khawaja Nazimuddin", "Liaquat Ali Khan", "Muhammad Ali Bogra", "Feroz Khan Noon"],
+            answer: 1,
+            rationale: "Nawabzada Liaquat Ali Khan served as Pakistan's first Prime Minister from 1947 until his assassination in 1951."
+          },
+          {
+            id: 315,
+            subject: "gk",
+            q: "Which ancient archaeological location in Sindh is immortalized with the folktale of Sasui and Punhun?",
+            options: ["Mohenjo-daro", "Amri", "Kot Diji", "Bhambhore"],
+            answer: 3,
+            rationale: "Bhambhore (near Thatta) is celebrated in Sindhi literature as the homeland of Sasui."
+          },
+          {
+            id: 316,
+            subject: "gk",
+            q: "The celebrated saint Hazrat Lal Shahbaz Qalandar was born in:",
+            options: ["1177 AD", "1214 AD", "1290 AD", "1310 AD"],
+            answer: 0,
+            rationale: "Hazrat Usman Marwandi (Lal Shahbaz Qalandar) was born around 1177 AD in Maiwand, current-day Afghanistan."
+          },
+          {
+            id: 317,
+            subject: "gk",
+            q: "The Indus River completes its course and empties into the:",
+            options: ["Bay of Bengal", "Arabian Sea", "Red Sea", "Persian Gulf"],
+            answer: 1,
+            rationale: "The Indus River flows southwards through Pakistan and drains into the Arabian Sea near Thatta."
+          },
+          {
+            id: 318,
+            subject: "gk",
+            q: "The historic 17th-century Shah Jahan Mosque, famed for its 100 domes and acoustic architecture, is in:",
+            options: ["Lahore", "Thatta", "Multan", "Peshawar"],
+            answer: 1,
+            rationale: "The Shah Jahan Mosque was built in Thatta in 1647 by Mughal Emperor Shah Jahan as a gift to the people of Sindh."
+          },
+
+          // General Science (19-25)
+          {
+            id: 319,
+            subject: "science",
+            q: "What is the alternative chemical name for Vitamin C?",
+            options: ["Citric Acid", "Ascorbic Acid", "Lactic Acid", "Acetic Acid"],
+            answer: 1,
+            rationale: "Vitamin C is chemically called L-ascorbic acid, vital for tissue repair and immune function."
+          },
+          {
+            id: 320,
+            subject: "science",
+            q: "Which scientific instrument is standardly used for measuring atmospheric pressure?",
+            options: ["Hygrometer", "Thermometer", "Barometer", "Anemometer"],
+            answer: 2,
+            rationale: "Barometers (mercury or aneroid) measure ambient atmospheric air pressure."
+          },
+          {
+            id: 321,
+            subject: "science",
+            q: "Which instrument is used in aircraft to calculate elevation or altitude above sea level?",
+            options: ["Altimeter", "Ammeter", "Speedometer", "Galvanometer"],
+            answer: 0,
+            rationale: "An altimeter determines an aircraft's altitude above a given reference level."
+          },
+          {
+            id: 322,
+            subject: "science",
+            q: "Aquatic organisms such as fish extract dissolved oxygen from water using:",
+            options: ["Lungs", "Skin only", "Gills", "Trachea"],
+            answer: 2,
+            rationale: "Gills are respiratory organs that absorb dissolved oxygen from incoming water and expel carbon dioxide."
+          },
+          {
+            id: 323,
+            subject: "science",
+            q: "Which vital organ of the human body produces bile juice?",
+            options: ["Gallbladder", "Pancreas", "Liver", "Stomach"],
+            answer: 2,
+            rationale: "Bile is synthesized by hepatocytes in the liver and stored/concentrated in the gallbladder."
+          },
+          {
+            id: 324,
+            subject: "science",
+            q: "Light reaches its maximum theoretical speed when traveling through:",
+            options: ["Water", "Glass", "Air", "Vacuum"],
+            answer: 3,
+            rationale: "In a vacuum, light encounters zero optical resistance and travels at its universal limit: ~300,000 km/s."
+          },
+          {
+            id: 325,
+            subject: "science",
+            q: "In human physiology, the primary organs responsible for blood filtration and urine excretion are:",
+            options: ["Lungs", "Kidneys", "Liver", "Spleen"],
+            answer: 1,
+            rationale: "The kidneys filter metabolic wastes (urea, excess salts) from the bloodstream to produce urine."
+          }
+        ]
+      },
+
+      {
+        id: 4,
+        title: "Test 04: SU Past Paper 2017",
+        source: "Sindh University 2017 Entrance Paper",
+        type: "past_paper",
+        tag: "Authentic Paper",
+        desc: "Authentic questions from session 2017 past paper.",
+        questions: [
+          // English (1-10)
+          {
+            id: 401,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: IMMACULATE",
+            options: ["Dirty", "Pure", "Filthy", "Neutral"],
+            answer: 1,
+            rationale: "Immaculate means perfectly clean, unblemished, spotless, or pure."
+          },
+          {
+            id: 402,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: ADMIT",
+            options: ["Obstruct", "Deny", "Confess", "Caution"],
+            answer: 2,
+            rationale: "To admit wrongdoing or truth means to confess or acknowledge it."
+          },
+          {
+            id: 403,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: ABBREVIATE",
+            options: ["Outfit", "Lengthen", "Applaud", "Shorten"],
+            answer: 3,
+            rationale: "Abbreviate means to shorten a word, phrase, or text."
+          },
+          {
+            id: 404,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: HYPOCRITICAL",
+            options: ["False", "Insincere", "Dishonest", "Sincere"],
+            answer: 3,
+            rationale: "Hypocritical means feigning beliefs or virtues; sincere denotes genuine honesty."
+          },
+          {
+            id: 405,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: ABHOR",
+            options: ["Love", "Likeness", "Attract", "Loathe"],
+            answer: 0,
+            rationale: "Abhor means to hate intensely or detest; its clear opposite is love."
+          },
+          {
+            id: 406,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: ENHANCE",
+            options: ["Intensify", "Enrich", "Degrade", "Insult"],
+            answer: 2,
+            rationale: "Enhance means to improve or raise quality; degrade means to diminish or reduce in quality."
+          },
+          {
+            id: 407,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Separately", "Seperately", "Saperatly", "Separetely"],
+            answer: 0,
+            rationale: "The correct spelling is 'Separately' (note the 'a' in the middle: sep-a-rate-ly)."
+          },
+          {
+            id: 408,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Lebaratry", "Labrotory", "Laberotory", "Laboratory"],
+            answer: 3,
+            rationale: "The correct spelling is 'Laboratory'."
+          },
+          {
+            id: 409,
+            subject: "english",
+            q: "Complete the sentence with correct preposition: 'Compare your answers ____ those of your partner.'",
+            options: ["on", "to", "with", "about"],
+            answer: 2,
+            rationale: "We compare one set of answers 'with' another to observe differences and similarities."
+          },
+          {
+            id: 410,
+            subject: "english",
+            q: "Fill in the blank: 'Don't be late ____ school.'",
+            options: ["for", "to", "along", "with"],
+            answer: 0,
+            rationale: "The standard prepositional idiom is 'late for' an event or institution."
+          },
+
+          // General Knowledge (11-18)
+          {
+            id: 411,
+            subject: "gk",
+            q: "The transformative socio-educational Aligarh Movement was spearheaded by:",
+            options: ["Allama Iqbal", "Sir Syed Ahmed Khan", "Maulana Muhammad Ali Jauhar", "Choudhry Rahmat Ali"],
+            answer: 1,
+            rationale: "Sir Syed Ahmed Khan initiated the Aligarh Movement to modernize Muslim education in British India."
+          },
+          {
+            id: 412,
+            subject: "gk",
+            q: "National poet Allama Muhammad Iqbal was born on:",
+            options: ["9th November, 1877", "25th December, 1876", "14th August, 1888", "23rd March, 1875"],
+            answer: 0,
+            rationale: "Allama Iqbal was born in Sialkot, Punjab on November 9, 1877."
+          },
+          {
+            id: 413,
+            subject: "gk",
+            q: "Hazrat Shah Abdul Latif Bhittai invented which distinctive musical string instrument for singing his poetry?",
+            options: ["Sitar", "Tambooro (Tanpura)", "Sarangi", "Rubab"],
+            answer: 1,
+            rationale: "Shah Latif invented the Tambooro (five-stringed instrument) specifically designed to accompany Shah Jo Raag."
+          },
+          {
+            id: 414,
+            subject: "gk",
+            q: "Which irrigation barrage on the Indus River is also officially known as 'Ghulam Muhammad Barrage'?",
+            options: ["Sukkur Barrage", "Kotri Barrage", "Guddu Barrage", "Taunsa Barrage"],
+            answer: 1,
+            rationale: "Kotri Barrage near Hyderabad, Sindh, opened in 1955, is named Ghulam Muhammad Barrage."
+          },
+          {
+            id: 415,
+            subject: "gk",
+            q: "The iconic Shah Faisal Mosque in Islamabad is located nestled at the foot of:",
+            options: ["Murree Hills", "Salt Range", "Margalla Hills", "Sulaiman Mountains"],
+            answer: 2,
+            rationale: "The Faisal Mosque is situated on the picturesque slopes of the Margalla Hills in Islamabad."
+          },
+          {
+            id: 416,
+            subject: "gk",
+            q: "Which country is recognized globally as the largest producer of sugar and sugarcane?",
+            options: ["India", "Cuba", "Brazil", "Pakistan"],
+            answer: 2,
+            rationale: "Brazil is consistently the world's topmost producer and exporter of sugarcane and refined sugar."
+          },
+          {
+            id: 417,
+            subject: "gk",
+            q: "Who authored the bestselling autobiographical work 'Daughter of the East'?",
+            options: ["Fatima Jinnah", "Mohtarma Benazir Bhutto", "Begum Ra'ana Liaquat", "Malala Yousafzai"],
+            answer: 1,
+            rationale: "'Daughter of the East' (also published as 'Daughter of Destiny') is the autobiography of Mohtarma Benazir Bhutto."
+          },
+          {
+            id: 418,
+            subject: "gk",
+            q: "The historic shrine of Sufi revolutionary leader Shah Inayat Shaheed is situated in Jhok Sharif in district:",
+            options: ["Hyderabad", "Thatta (Sujawal)", "Badin", "Larkana"],
+            answer: 1,
+            rationale: "Sufi Shah Inayat Shaheed's shrine is in Jhok Sharif (historically part of Thatta district)."
+          },
+
+          // General Science (19-25)
+          {
+            id: 419,
+            subject: "science",
+            q: "What is the international chemical symbol for Gold?",
+            options: ["Ag", "Au", "Gd", "Fe"],
+            answer: 1,
+            rationale: "Gold's symbol 'Au' derives from its Latin name 'Aurum'."
+          },
+          {
+            id: 420,
+            subject: "science",
+            q: "Which fat-soluble vitamin plays an irreplaceable role in blood clotting and bone metabolism?",
+            options: ["Vitamin A", "Vitamin B12", "Vitamin K", "Vitamin E"],
+            answer: 2,
+            rationale: "Vitamin K is essential for synthesizing prothrombin and clotting factors in the liver."
+          },
+          {
+            id: 421,
+            subject: "science",
+            q: "The normal resting arterial blood pressure for a healthy human adult is approximately:",
+            options: ["80/120 mmHg", "120/80 mmHg", "140/90 mmHg", "100/60 mmHg"],
+            answer: 1,
+            rationale: "Standard systolic pressure is around 120 mmHg and diastolic is 80 mmHg (120/80 mmHg)."
+          },
+          {
+            id: 422,
+            subject: "science",
+            q: "Which of the following planets does NOT belong to the Inner Terrestrial Solar System?",
+            options: ["Mercury", "Venus", "Earth", "Jupiter"],
+            answer: 3,
+            rationale: "The inner solar system consists of Mercury, Venus, Earth, and Mars. Jupiter is an outer Jovian gas giant."
+          },
+          {
+            id: 423,
+            subject: "science",
+            q: "What is the chemical formula of Lime (Quicklime / Calcium Oxide)?",
+            options: ["CaCO3", "CaO", "Ca(OH)2", "CaCl2"],
+            answer: 1,
+            rationale: "Quicklime is pure calcium oxide with the chemical formula CaO."
+          },
+          {
+            id: 424,
+            subject: "science",
+            q: "The largest artery/blood vessel in the entire human vascular system is the:",
+            options: ["Pulmonary vein", "Carotid artery", "Aorta", "Vena cava"],
+            answer: 2,
+            rationale: "The aorta originates directly from the left ventricle and carries oxygen-rich blood to the entire body."
+          },
+          {
+            id: 425,
+            subject: "science",
+            q: "A Concave (diverging) optical lens causes incident parallel light rays to:",
+            options: ["Converge together", "Diverge / Spread apart", "Reflect directly back", "Disappear completely"],
+            answer: 1,
+            rationale: "A concave lens is thinner in the center and spreads out (diverges) light rays that pass through it."
+          }
+        ]
+      },
+
+      {
+        id: 5,
+        title: "Test 05: SU Past Paper 2018",
+        source: "Sindh University 2018 Entrance Paper",
+        type: "past_paper",
+        tag: "Authentic Paper",
+        desc: "Questions directly extracted from the 2018 SU admission past paper.",
+        questions: [
+          // English (1-10)
+          {
+            id: 501,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: CERTAIN",
+            options: ["Doubtful", "Disagree", "Sure", "Stranger"],
+            answer: 2,
+            rationale: "Certain denotes feeling completely convinced or sure beyond doubt."
+          },
+          {
+            id: 502,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: INTERESTING",
+            options: ["Appealing", "Ugly", "Profit", "Dressing"],
+            answer: 0,
+            rationale: "Interesting means arousing curiosity or fascination; appealing is its closest synonym."
+          },
+          {
+            id: 503,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: OBVIOUS",
+            options: ["Extreme", "Scant", "Ample", "Apparent"],
+            answer: 3,
+            rationale: "Obvious means easily perceived or understood; apparent is synonymous."
+          },
+          {
+            id: 504,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: TOGETHER",
+            options: ["Separate", "Positive", "Problem", "Loathe"],
+            answer: 0,
+            rationale: "Together means united or joined in one place; separate means apart from each other."
+          },
+          {
+            id: 505,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: STRANGE",
+            options: ["Intensify", "Familiar", "Afraid", "Degrade"],
+            answer: 1,
+            rationale: "Strange refers to something unfamiliar or unaccustomed; familiar is its true antonym."
+          },
+          {
+            id: 506,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: RELAX",
+            options: ["Hungry", "Tense", "Dishonest", "Insincere"],
+            answer: 1,
+            rationale: "To relax means to release strain and become calm; to tense means to strain or tighten."
+          },
+          {
+            id: 507,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Scisor", "Sissor", "Scessor", "Scissors"],
+            answer: 3,
+            rationale: "The correct spelling is 'Scissors'."
+          },
+          {
+            id: 508,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Scientefic", "Scintific", "Scientific", "Sceintific"],
+            answer: 2,
+            rationale: "The correct spelling is 'Scientific'."
+          },
+          {
+            id: 509,
+            subject: "english",
+            q: "Fill in the blank: 'Can I come and sit ____ you?'",
+            options: ["of", "around", "next", "beside"],
+            answer: 3,
+            rationale: "'Beside' means by the side of or next to a person."
+          },
+          {
+            id: 510,
+            subject: "english",
+            q: "Fill in the blank: 'He drew the picture ____ a colored pencil.'",
+            options: ["by", "in", "with", "at"],
+            answer: 2,
+            rationale: "Instruments and tools used by agents take the preposition 'with' ('with a pencil', 'with a pen')."
+          },
+
+          // General Knowledge (11-18)
+          {
+            id: 511,
+            subject: "gk",
+            q: "Allah bestowed Prophethood on the Holy Prophet Muhammad (SAW) at the age of:",
+            options: ["25 years", "35 years", "40 years", "63 years"],
+            answer: 2,
+            rationale: "Prophet Muhammad (SAW) received the first revelation in Cave Hira at the age of 40."
+          },
+          {
+            id: 512,
+            subject: "gk",
+            q: "What was the name of the celebrated sword presented to Hazrat Ali (RA)?",
+            options: ["Al-Battar", "Zulfiqar", "Al-Ma'thur", "Hatif"],
+            answer: 1,
+            rationale: "Zulfiqar was the renowned bifurcated sword of Hazrat Ali ibn Abi Talib (RA)."
+          },
+          {
+            id: 513,
+            subject: "gk",
+            q: "The unique and indigenous Kalash Valley is situated in which Pakistani district?",
+            options: ["Swat", "Chitral", "Dir", "Gilgit"],
+            answer: 1,
+            rationale: "The Kalash Valleys are located in Chitral District, Khyber Pakhtunkhwa."
+          },
+          {
+            id: 514,
+            subject: "gk",
+            q: "What is the capital city of Australia?",
+            options: ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+            answer: 2,
+            rationale: "Canberra is the purpose-built federal capital city of Australia."
+          },
+          {
+            id: 515,
+            subject: "gk",
+            q: "In which country is the famous Sutherland Waterfall located?",
+            options: ["Canada", "New Zealand", "Norway", "Iceland"],
+            answer: 1,
+            rationale: "Sutherland Falls is a prominent waterfall near Milford Sound in New Zealand."
+          },
+          {
+            id: 516,
+            subject: "gk",
+            q: "What is the official currency of the Kingdom of Saudi Arabia?",
+            options: ["Dinar", "Dirham", "Riyal", "Rupee"],
+            answer: 2,
+            rationale: "The Saudi Riyal (SAR) is the official currency of Saudi Arabia."
+          },
+          {
+            id: 517,
+            subject: "gk",
+            q: "The iconic architectural monument 'Eiffel Tower' is situated in:",
+            options: ["London", "Rome", "Paris", "Berlin"],
+            answer: 2,
+            rationale: "The Eiffel Tower stands on the Champ de Mars in Paris, France."
+          },
+          {
+            id: 518,
+            subject: "gk",
+            q: "Who is the author of the prison political memoir 'If I Am Assassinated'?",
+            options: ["Liaquat Ali Khan", "Zulfikar Ali Bhutto", "Ayub Khan", "Sheikh Mujibur Rahman"],
+            answer: 1,
+            rationale: "Former Prime Minister Zulfikar Ali Bhutto wrote 'If I Am Assassinated' from his prison cell in 1978."
+          },
+
+          // General Science (19-25)
+          {
+            id: 519,
+            subject: "science",
+            q: "Which device converts stored chemical energy directly into electrical energy?",
+            options: ["Electric Motor", "Electric Generator", "Battery (Chemical Cell)", "Transformer"],
+            answer: 2,
+            rationale: "An electrochemical battery converts chemical energy into electrical energy via redox reactions."
+          },
+          {
+            id: 520,
+            subject: "science",
+            q: "What is the standard SI unit of Electric Current?",
+            options: ["Volt", "Ampere", "Ohm", "Watt"],
+            answer: 1,
+            rationale: "The Ampere (symbol A) is the base SI unit of electrical current."
+          },
+          {
+            id: 521,
+            subject: "science",
+            q: "Long-sightedness (Hypermetropia) in human vision is corrected by using a:",
+            options: ["Concave lens", "Convex lens", "Cylindrical lens", "Bifocal mirror"],
+            answer: 1,
+            rationale: "A converging (convex) lens converges light rays to focus correctly onto the retina."
+          },
+          {
+            id: 522,
+            subject: "science",
+            q: "Which of the following common substances is an electrical non-conductor (insulator)?",
+            options: ["Copper", "Silver", "Glass", "Aluminium"],
+            answer: 2,
+            rationale: "Glass tightly holds its valence electrons, making it a very strong electrical insulator."
+          },
+          {
+            id: 523,
+            subject: "science",
+            q: "Unlike electromagnetic light waves, mechanical Sound Waves CANNOT travel through:",
+            options: ["Steel", "Water", "Air", "A vacuum"],
+            answer: 3,
+            rationale: "Sound requires a physical material medium (solid, liquid, or gas) to propagate compressional vibrations."
+          },
+          {
+            id: 524,
+            subject: "science",
+            q: "When white light passes through a glass prism, dispersion splits it into:",
+            options: ["3 colors", "5 colors", "7 colors", "10 colors"],
+            answer: 2,
+            rationale: "Dispersion separates white light into the 7 rainbow spectrum colors (VIBGYOR)."
+          },
+          {
+            id: 525,
+            subject: "science",
+            q: "The medical deficiency disease 'Scurvy' is caused by insufficient intake of:",
+            options: ["Vitamin A", "Vitamin B1", "Vitamin C", "Vitamin D"],
+            answer: 2,
+            rationale: "Scurvy is caused by Vitamin C deficiency, causing bleeding gums, poor wound healing, and weakness."
+          }
+        ]
+      },
+
+      {
+        id: 6,
+        title: "Test 06: SU Past Paper 2019",
+        source: "Sindh University 2019 Entrance Paper",
+        type: "past_paper",
+        tag: "Authentic Paper",
+        desc: "Official MCQs extracted from session 2019 university paper.",
+        questions: [
+          // English (1-10)
+          {
+            id: 601,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: ECHO",
+            options: ["Song", "Repetition of sound", "Building", "Bird"],
+            answer: 1,
+            rationale: "An echo is a sound caused by the reflection of sound waves back to the listener."
+          },
+          {
+            id: 602,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: EVADE",
+            options: ["Capture", "Convicted", "Avoid", "Seize"],
+            answer: 2,
+            rationale: "To evade means to escape, dodge, or avoid through cleverness or deceit."
+          },
+          {
+            id: 603,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: CONTRADICT",
+            options: ["Clear", "Confine", "Deplore", "Oppose"],
+            answer: 3,
+            rationale: "Contradict means to assert the opposite of a statement or oppose someone's view."
+          },
+          {
+            id: 604,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: DENOUNCE",
+            options: ["Decrease", "Tricky", "Criticize", "Copied"],
+            answer: 2,
+            rationale: "To denounce means to publicly condemn, censure, or criticize."
+          },
+          {
+            id: 605,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: DELINEATE",
+            options: ["Ridicule", "Harmful", "Describe", "Carefulness"],
+            answer: 2,
+            rationale: "Delineate means to describe, portray, or outline with precision."
+          },
+          {
+            id: 606,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: GALLANT",
+            options: ["Bold / Brave", "Fine", "Frolic", "Coward"],
+            answer: 0,
+            rationale: "Gallant means brave, noble, heroic, or bold."
+          },
+          {
+            id: 607,
+            subject: "english",
+            q: "Fill in the blank: 'The bank does not open ____ 10:00 AM.'",
+            options: ["for", "still", "until", "just"],
+            answer: 2,
+            rationale: "'Until' expresses duration up to a specific designated point in time."
+          },
+          {
+            id: 608,
+            subject: "english",
+            q: "Fill in the blank: 'We need some sugar; we are almost completely ____ it.'",
+            options: ["out", "out of", "over", "through"],
+            answer: 1,
+            rationale: "'Out of' is an idiom meaning depleted or lacking a resource."
+          },
+          {
+            id: 609,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Europian", "Uropion", "European", "Eurapeon"],
+            answer: 2,
+            rationale: "The correct spelling is 'European'."
+          },
+          {
+            id: 610,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Vocabulary", "Vocablury", "Vocabilory", "Vocabliry"],
+            answer: 0,
+            rationale: "The correct spelling is 'Vocabulary'."
+          },
+
+          // General Knowledge (11-18)
+          {
+            id: 611,
+            subject: "gk",
+            q: "Area-wise, what is the world's largest enclosed inland body of water?",
+            options: ["Dead Sea", "Sea of Japan", "Caspian Sea", "Red Sea"],
+            answer: 2,
+            rationale: "The Caspian Sea is the Earth's largest enclosed inland body of water by surface area."
+          },
+          {
+            id: 612,
+            subject: "gk",
+            q: "In cellular telephony and telecommunications, what does SMS stand for?",
+            options: ["Short Message Service", "Standard Mobile System", "Simple Mailing System", "Secure Messaging Service"],
+            answer: 0,
+            rationale: "SMS stands for Short Message Service, established in digital mobile communications."
+          },
+          {
+            id: 613,
+            subject: "gk",
+            q: "Which agricultural district in Sindh is internationally famous for premium Mango orchards?",
+            options: ["Larkana", "Mirpurkhas", "Jacobabad", "Sukkur"],
+            answer: 1,
+            rationale: "Mirpurkhas is widely hailed as the 'City of Mangoes' for producing the finest Sindhri mangoes."
+          },
+          {
+            id: 614,
+            subject: "gk",
+            q: "The historic Pakistan Resolution (Lahore Resolution) was presented in which year?",
+            options: ["1930", "1935", "1940", "1946"],
+            answer: 2,
+            rationale: "The Lahore Resolution demanding separate Muslim autonomous states was passed on March 23, 1940."
+          },
+          {
+            id: 615,
+            subject: "gk",
+            q: "What is the official currency of China?",
+            options: ["Yen", "Won", "Yuan (Renminbi)", "Rial"],
+            answer: 2,
+            rationale: "The Yuan (Renminbi) is the official currency of the People's Republic of China."
+          },
+          {
+            id: 616,
+            subject: "gk",
+            q: "The Arabian Sea, bordering southern Pakistan, forms an integral part of which ocean?",
+            options: ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean"],
+            answer: 2,
+            rationale: "The Arabian Sea is a northern marginal sea of the Indian Ocean."
+          },
+          {
+            id: 617,
+            subject: "gk",
+            q: "The historic early Islamic Battle of Uhud took place in:",
+            options: ["622 AD", "624 AD", "625 AD (3 AH)", "630 AD"],
+            answer: 2,
+            rationale: "The Battle of Uhud occurred in 3 AH (625 AD) near Mount Uhud outside Medina."
+          },
+          {
+            id: 618,
+            subject: "gk",
+            q: "The architectural marvel known as the 'Leaning Tower of Pisa' is located in:",
+            options: ["France", "Spain", "Italy", "Greece"],
+            answer: 2,
+            rationale: "The Leaning Tower of Pisa is the freestanding bell tower of Pisa Cathedral in Italy."
+          },
+
+          // General Science (19-25)
+          {
+            id: 619,
+            subject: "science",
+            q: "Which strong yet lightweight metal is predominantly used to construct aircraft fuselages and frames?",
+            options: ["Copper", "Silver", "Aluminum", "Lead"],
+            answer: 2,
+            rationale: "Aluminum and its lightweight alloys are chosen for aircraft due to high strength-to-weight ratio."
+          },
+          {
+            id: 620,
+            subject: "science",
+            q: "On railway tracks, small consecutive gaps are purposely left between steel rails to:",
+            options: ["Save steel costs", "Allow thermal expansion during intense summer heat", "Allow air to pass", "Reduce train speed"],
+            answer: 1,
+            rationale: "Metals expand when heated; without gaps, rails would buckle and warp under high summer temperatures."
+          },
+          {
+            id: 621,
+            subject: "science",
+            q: "Water stored in an elevated reservoir dam possesses which form of stored energy?",
+            options: ["Kinetic Energy", "Potential Energy", "Thermal Energy", "Nuclear Energy"],
+            answer: 1,
+            rationale: "Water stored at a height possesses gravitational potential energy which converts to kinetic energy when released."
+          },
+          {
+            id: 622,
+            subject: "science",
+            q: "The backward kick (recoil) felt when firing a firearm is a direct demonstration of:",
+            options: ["Newton's First Law", "Newton's Second Law", "Newton's Third Law of Motion", "Coulomb's Law"],
+            answer: 2,
+            rationale: "Newton's third law states every action has an equal and opposite reaction (forward bullet force = backward recoil)."
+          },
+          {
+            id: 623,
+            subject: "science",
+            q: "It is considered unhealthy to sleep under dense trees at night because plants predominantly:",
+            options: ["Release Carbon Dioxide at night", "Release Oxygen at night", "Absorb all atmospheric moisture", "Emit nitrogen gas"],
+            answer: 0,
+            rationale: "Without sunlight, photosynthesis halts while respiration continues, consuming oxygen and releasing CO2."
+          },
+          {
+            id: 624,
+            subject: "science",
+            q: "Which marine creature has three distinct pumping hearts in its body?",
+            options: ["Dolphin", "Octopus", "Shark", "Seahorse"],
+            answer: 1,
+            rationale: "An octopus has three hearts: two pump blood through the gills, while the third pumps it through the body."
+          },
+          {
+            id: 625,
+            subject: "science",
+            q: "Which English scientist formulated the first modern scientific Atomic Theory in 1803?",
+            options: ["John Dalton", "Ernest Rutherford", "J.J. Thomson", "Niels Bohr"],
+            answer: 0,
+            rationale: "John Dalton proposed that all matter is composed of extremely small, indivisible particles called atoms."
+          }
+        ]
+      },
+
+      {
+        id: 7,
+        title: "Test 07: Official PET 2025 & Mock Paper",
+        source: "Official Sample PET 2025 & Sindh University Mock Paper",
+        type: "past_paper",
+        tag: "Authentic Paper",
+        desc: "Questions extracted directly from the PET-2025 official sample paper and mock test.",
+        questions: [
+          // English (1-10)
+          {
+            id: 701,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: GIGANTIC",
+            options: ["Huge", "Tiny", "Bright", "Narrow"],
+            answer: 0,
+            rationale: "Gigantic means of very great size or extent, synonymous with huge or colossal."
+          },
+          {
+            id: 702,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: ACCELERATE",
+            options: ["Delay / Decelerate", "Risk", "Monitor", "Deny"],
+            answer: 0,
+            rationale: "Accelerate means to speed up; to delay or slow down is its opposite."
+          },
+          {
+            id: 703,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Knowladge", "Knowlidge", "Knowledge", "Knwoledge"],
+            answer: 2,
+            rationale: "The correct spelling is 'Knowledge'."
+          },
+          {
+            id: 704,
+            subject: "english",
+            q: "Choose the appropriate preposition: 'The mountain is covered ____ snow.'",
+            options: ["by", "with", "of", "from"],
+            answer: 1,
+            rationale: "The standard phrase is 'covered with' (or covered in) snow."
+          },
+          {
+            id: 705,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: RESILIENT",
+            options: ["Fragile", "Tough", "Slow", "Timid"],
+            answer: 1,
+            rationale: "Resilient describes the capacity to recover quickly from difficulties; tough and durable."
+          },
+          {
+            id: 706,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: CANDID",
+            options: ["Frank", "Secretive", "Shy", "Rude"],
+            answer: 0,
+            rationale: "Candid means truthful, straightforward, and frank."
+          },
+          {
+            id: 707,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: OPTIMISTIC",
+            options: ["Hopeful", "Pessimistic", "Careful", "Joyful"],
+            answer: 1,
+            rationale: "An optimist looks at positive possibilities, whereas a pessimist expects worst outcomes."
+          },
+          {
+            id: 708,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: ABUNDANT",
+            options: ["Plentiful", "Scarce", "Huge", "Rich"],
+            answer: 1,
+            rationale: "Abundant means existing in copious supply; scarce signifies insufficiency."
+          },
+          {
+            id: 709,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Accomodate", "Acommodate", "Accommodate", "Acomodate"],
+            answer: 2,
+            rationale: "Accommodate contains double 'c' and double 'm'."
+          },
+          {
+            id: 710,
+            subject: "english",
+            q: "Choose the grammatically CORRECT sentence:",
+            options: [
+              "Neither of the boys were present.",
+              "Neither of the boys was present.",
+              "Neither of the boys are present.",
+              "Neither of the boy was present."
+            ],
+            answer: 1,
+            rationale: "'Neither of' takes a plural noun followed by a singular verb: 'was present'."
+          },
+
+          // General Knowledge (11-18)
+          {
+            id: 711,
+            subject: "gk",
+            q: "Which Surah of the Holy Quran contains the phrase 'Bismillah-ir-Rahman-ir-Rahim' TWO times?",
+            options: ["Surah At-Tawbah", "Surah Al-Baqarah", "Surah An-Naml", "Surah Yaseen"],
+            answer: 2,
+            rationale: "Surah An-Naml contains Bismillah at the opening and again in verse 30 in the letter from Prophet Sulaiman (AS)."
+          },
+          {
+            id: 712,
+            subject: "gk",
+            q: "Under the Constitution of Pakistan, who is the executive Head of the Government?",
+            options: ["President", "Chief Justice", "Prime Minister", "Speaker of National Assembly"],
+            answer: 2,
+            rationale: "The Prime Minister is the constitutional Head of Government, while the President is the Head of State."
+          },
+          {
+            id: 713,
+            subject: "gk",
+            q: "What is the ancient historic name of the city of Hyderabad, Sindh?",
+            options: ["Neroon Kot", "Gandhara", "Khuda Abad", "Lyallpur"],
+            answer: 0,
+            rationale: "Hyderabad was historically known as Neroon Kot prior to its rebuilding by Ghulam Shah Kalhoro in 1768."
+          },
+          {
+            id: 714,
+            subject: "gk",
+            q: "What is the official National Flower of Pakistan?",
+            options: ["Rose", "Jasmine (Chambeli)", "Sunflower", "Tulip"],
+            answer: 1,
+            rationale: "Poet's Jasmine (Jasminum officinale) is the recognized national flower of Pakistan."
+          },
+          {
+            id: 715,
+            subject: "gk",
+            q: "Which of the following barrages is NOT situated in Sindh province?",
+            options: ["Guddu Barrage", "Sukkur Barrage", "Kotri Barrage", "Chashma Barrage"],
+            answer: 3,
+            rationale: "Chashma Barrage is located in Mianwali District, Punjab."
+          },
+          {
+            id: 716,
+            subject: "gk",
+            q: "Pakistan officially conducted nuclear tests and emerged as a declared nuclear state in:",
+            options: ["1974", "1988", "1998", "2001"],
+            answer: 2,
+            rationale: "Pakistan tested nuclear devices on May 28 and 30, 1998, at the Ras Koh Hills in Chagai, Balochistan."
+          },
+          {
+            id: 717,
+            subject: "gk",
+            q: "What is the longest river flowing in Pakistan?",
+            options: ["Chenab River", "Jhelum River", "Indus River", "Ravi River"],
+            answer: 2,
+            rationale: "The Indus River (~3,180 km) is the longest and lifeline river of Pakistan."
+          },
+          {
+            id: 718,
+            subject: "gk",
+            q: "Which bustling metropolis of Pakistan is affectionately termed the 'City of Lights'?",
+            options: ["Lahore", "Karachi", "Islamabad", "Peshawar"],
+            answer: 1,
+            rationale: "Karachi has historically been known as 'Uroos-ul-Bilaad' or the 'City of Lights' for its vibrant night activity."
+          },
+
+          // General Science (19-25)
+          {
+            id: 719,
+            subject: "science",
+            q: "What is the basic chemical formula of Water?",
+            options: ["H2O", "H2O2", "Al2O3", "NaCl"],
+            answer: 0,
+            rationale: "A water molecule consists of two hydrogen atoms covalently bonded to one oxygen atom: H2O."
+          },
+          {
+            id: 720,
+            subject: "science",
+            q: "What is the standard SI unit of Force?",
+            options: ["Pascal", "Joule", "Newton", "Watt"],
+            answer: 2,
+            rationale: "Force is measured in Newtons (N), defined as kg·m/s²."
+          },
+          {
+            id: 721,
+            subject: "science",
+            q: "In computing hardware, the keyboard of a computer system is classified as:",
+            options: ["Software", "Firmware", "Hardware", "Operating System"],
+            answer: 2,
+            rationale: "The physical keyboard is an input peripheral device, which is physical computer hardware."
+          },
+          {
+            id: 722,
+            subject: "science",
+            q: "Which organelle is universally dubbed the 'Powerhouse of the Cell'?",
+            options: ["Nucleus", "Ribosome", "Mitochondria", "Golgi body"],
+            answer: 2,
+            rationale: "Mitochondria generate the majority of cellular adenosine triphosphate (ATP) through cellular respiration."
+          },
+          {
+            id: 723,
+            subject: "science",
+            q: "Which metal is unique in being in a liquid state at room temperature?",
+            options: ["Gallium", "Mercury (Hg)", "Lead", "Tin"],
+            answer: 1,
+            rationale: "Mercury has a melting point of -38.83°C, making it the only standard metal that is liquid at room temperature."
+          },
+          {
+            id: 724,
+            subject: "science",
+            q: "What is the international chemical symbol for Iron?",
+            options: ["Ir", "In", "Fe", "I"],
+            answer: 2,
+            rationale: "Iron's symbol 'Fe' comes from its Latin designation 'Ferrum'."
+          },
+          {
+            id: 725,
+            subject: "science",
+            q: "Through which medium does sound travel at its highest velocity?",
+            options: ["Gases (Air)", "Liquids (Water)", "Solids (Steel)", "Vacuum"],
+            answer: 2,
+            rationale: "Because particles in solids are tightly packed with high elasticity, sound travels fastest in solids (~5000 m/s in steel)."
+          }
+        ]
+      },
+
+      {
+        id: 8,
+        title: "Test 08: High-Yield Model Paper 1",
+        source: "Predictive Model Paper 1 (Same Pattern & Difficulty)",
+        type: "model_paper",
+        tag: "Created Model",
+        desc: "Synthesized on identical Sindh University admission weightage and standard.",
+        questions: [
+          // English (1-10)
+          {
+            id: 801,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: ABSTAIN",
+            options: ["Indulge", "Refrain", "Permit", "Begin"],
+            answer: 1,
+            rationale: "To abstain from an activity means to voluntarily hold oneself back or refrain from doing it."
+          },
+          {
+            id: 802,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: CONCUR",
+            options: ["Disagree", "Agree", "Debate", "Reject"],
+            answer: 1,
+            rationale: "To concur means to have the same opinion or to agree."
+          },
+          {
+            id: 803,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: ARROGANT",
+            options: ["Proud", "Haughty", "Humble", "Severe"],
+            answer: 2,
+            rationale: "Arrogant implies exaggerated self-importance; humble means modest and respectful."
+          },
+          {
+            id: 804,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: OBSOLETE",
+            options: ["Ancient", "Outdated", "Modern / Contemporary", "Forgotten"],
+            answer: 2,
+            rationale: "Obsolete means no longer used or out of date; modern means current and contemporary."
+          },
+          {
+            id: 805,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Questionaire", "Questionnaire", "Questionnair", "Questionare"],
+            answer: 1,
+            rationale: "The correct spelling is 'Questionnaire' (double 'n')."
+          },
+          {
+            id: 806,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Guarantee", "Garantie", "Guarntee", "Gaurantee"],
+            answer: 0,
+            rationale: "The correct spelling is 'Guarantee'."
+          },
+          {
+            id: 807,
+            subject: "english",
+            q: "Fill in the blank: 'He has been suffering from illness ____ Monday.'",
+            options: ["for", "since", "from", "at"],
+            answer: 1,
+            rationale: "For a specific point of starting time in perfect continuous tense, 'since' is required."
+          },
+          {
+            id: 808,
+            subject: "english",
+            q: "Choose the right preposition: 'She congratulated him ____ passing the test.'",
+            options: ["for", "on", "at", "about"],
+            answer: 1,
+            rationale: "The standard preposition that follows congratulate is 'on' ('congratulate on')."
+          },
+          {
+            id: 809,
+            subject: "english",
+            q: "Choose the correct Passive Voice: 'The chef prepared a wonderful dinner.'",
+            options: [
+              "A wonderful dinner was prepared by the chef.",
+              "A wonderful dinner is prepared by the chef.",
+              "A wonderful dinner has been prepared by the chef.",
+              "The chef was prepared by a wonderful dinner."
+            ],
+            answer: 0,
+            rationale: "Past simple passive: Object + was/were + V3 + by + Subject."
+          },
+          {
+            id: 810,
+            subject: "english",
+            q: "Change to Indirect Speech: He said, 'I have lost my book.'",
+            options: [
+              "He said that he has lost his book.",
+              "He said that he had lost his book.",
+              "He says that he lost his book.",
+              "He told that he had lost my book."
+            ],
+            answer: 1,
+            rationale: "Present perfect ('have lost') shifts to past perfect ('had lost') in indirect reporting."
+          },
+
+          // General Knowledge (11-18)
+          {
+            id: 811,
+            subject: "gk",
+            q: "Who was appointed as the first Governor-General of Pakistan in 1947?",
+            options: ["Liaquat Ali Khan", "Quaid-e-Azam Muhammad Ali Jinnah", "Khawaja Nazimuddin", "Malik Ghulam Muhammad"],
+            answer: 1,
+            rationale: "Quaid-e-Azam Muhammad Ali Jinnah was sworn in as Pakistan's first Governor-General on August 15, 1947."
+          },
+          {
+            id: 812,
+            subject: "gk",
+            q: "The prehistoric Indus Valley archaeological site of Mohenjo-daro is situated in which district of Sindh?",
+            options: ["Larkana", "Sukkur", "Thatta", "Khairpur"],
+            answer: 0,
+            rationale: "Mohenjo-daro is located in Larkana District on the right bank of the Indus River."
+          },
+          {
+            id: 813,
+            subject: "gk",
+            q: "The historic Indus Waters Treaty between Pakistan and India was mediated by the World Bank and signed in:",
+            options: ["1948", "1956", "1960", "1965"],
+            answer: 2,
+            rationale: "The treaty was signed in Karachi on September 19, 1960, by President Ayub Khan and PM Jawaharlal Nehru."
+          },
+          {
+            id: 814,
+            subject: "gk",
+            q: "What is the capital city of Canada?",
+            options: ["Toronto", "Montreal", "Ottawa", "Vancouver"],
+            answer: 2,
+            rationale: "Ottawa in Ontario is the national capital of Canada."
+          },
+          {
+            id: 815,
+            subject: "gk",
+            q: "Which vast desert is primarily spread across eastern Sindh along the border with India?",
+            options: ["Thal Desert", "Thar Desert", "Cholistan Desert", "Kharan Desert"],
+            answer: 1,
+            rationale: "The Thar Desert covers southeastern Sindh (Tharparkar, Umerkot, and Mirpurkhas districts)."
+          },
+          {
+            id: 816,
+            subject: "gk",
+            q: "In Islamic Fiqh, how many mandatory (Farz) acts are there in performing Wudu (ablution)?",
+            options: ["3", "4", "6", "7"],
+            answer: 1,
+            rationale: "There are four Farz acts: washing the face, washing both arms up to elbows, wiping 1/4 of the head (Masah), and washing feet up to ankles."
+          },
+          {
+            id: 817,
+            subject: "gk",
+            q: "What is the highest mountain peak in Pakistan (and second highest on Earth)?",
+            options: ["Nanga Parbat", "K2 (Mount Godwin-Austen)", "Broad Peak", "Gasherbrum I"],
+            answer: 1,
+            rationale: "K2 in the Karakoram range stands at 8,611 meters, second only to Mount Everest."
+          },
+          {
+            id: 818,
+            subject: "gk",
+            q: "The bilateral Simla Agreement between Pakistan and India was signed in:",
+            options: ["1966", "1971", "1972", "1974"],
+            answer: 2,
+            rationale: "Signed on July 2, 1972, by Zulfikar Ali Bhutto and Indira Gandhi following the 1971 war."
+          },
+
+          // General Science (19-25)
+          {
+            id: 819,
+            subject: "science",
+            q: "What is the chemical name and formula of Baking Soda?",
+            options: ["Sodium Carbonate (Na2CO3)", "Sodium Bicarbonate (NaHCO3)", "Calcium Hydroxide", "Sodium Chloride"],
+            answer: 1,
+            rationale: "Baking soda is sodium hydrogen carbonate / sodium bicarbonate (NaHCO3)."
+          },
+          {
+            id: 820,
+            subject: "science",
+            q: "Which gas is by far the most abundant by volume in Earth's clean atmosphere?",
+            options: ["Oxygen (~21%)", "Carbon Dioxide (~0.04%)", "Nitrogen (~78%)", "Argon (~0.9%)"],
+            answer: 2,
+            rationale: "Nitrogen gas makes up roughly 78.08% of Earth's atmosphere."
+          },
+          {
+            id: 821,
+            subject: "science",
+            q: "Which iron-containing protein inside erythrocytes gives human blood its distinct red pigment?",
+            options: ["Albumin", "Hemoglobin", "Keratin", "Fibrinogen"],
+            answer: 1,
+            rationale: "Hemoglobin binds oxygen in the lungs and carries it to tissues, imparting a red color."
+          },
+          {
+            id: 822,
+            subject: "science",
+            q: "Which instrument is specifically used to measure electrical potential difference (voltage)?",
+            options: ["Ammeter", "Voltmeter", "Ohmmeter", "Galvanometer"],
+            answer: 1,
+            rationale: "A voltmeter is connected in parallel across an electrical component to measure voltage."
+          },
+          {
+            id: 823,
+            subject: "science",
+            q: "The average acceleration due to gravity ($g$) at the surface of Earth is approximately:",
+            options: ["6.8 m/s²", "9.8 m/s²", "12.4 m/s²", "3.0 x 10⁸ m/s²"],
+            answer: 1,
+            rationale: "Standard gravitational acceleration at Earth's surface is approximately 9.8 m/s²."
+          },
+          {
+            id: 824,
+            subject: "science",
+            q: "Which endocrine gland located at the base of the brain is called the 'Master Gland' of the body?",
+            options: ["Thyroid gland", "Adrenal gland", "Pituitary gland", "Thymus"],
+            answer: 2,
+            rationale: "The pituitary gland secretes tropic hormones that control and stimulate other endocrine glands."
+          },
+          {
+            id: 825,
+            subject: "science",
+            q: "The spontaneous phase change of a liquid into gas occurring at temperatures below its boiling point is:",
+            options: ["Sublimation", "Evaporation", "Condensation", "Boiling"],
+            answer: 1,
+            rationale: "Evaporation is a surface phenomenon occurring at any temperature where liquid molecules gain enough energy to vaporize."
+          }
+        ]
+      },
+
+      {
+        id: 9,
+        title: "Test 09: High-Yield Model Paper 2",
+        source: "Predictive Model Paper 2 (Same Pattern & Difficulty)",
+        type: "model_paper",
+        tag: "Created Model",
+        desc: "Created around the core entrance syllabus: English grammar, Pakistan Studies, and Basic Science.",
+        questions: [
+          // English (1-10)
+          {
+            id: 901,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: INEVITABLE",
+            options: ["Avoidable", "Unavoidable / Certain", "Unlikely", "Doubtful"],
+            answer: 1,
+            rationale: "Inevitable means certain to happen and incapable of being avoided or prevented."
+          },
+          {
+            id: 902,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: PRAGMATIC",
+            options: ["Idealistic", "Practical", "Careless", "Theoretical"],
+            answer: 1,
+            rationale: "Pragmatic means dealing with matters sensibly and realistically based on practical considerations."
+          },
+          {
+            id: 903,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: RIGID",
+            options: ["Hard", "Stiff", "Flexible", "Firm"],
+            answer: 2,
+            rationale: "Rigid means unyielding and stiff; flexible denotes adaptability and pliability."
+          },
+          {
+            id: 904,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: ARTIFICIAL",
+            options: ["Synthetic", "Natural", "Man-made", "Imitation"],
+            answer: 1,
+            rationale: "Artificial is something produced by human craft rather than originating naturally."
+          },
+          {
+            id: 905,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Maintainance", "Maintenance", "Maintanance", "Maintenence"],
+            answer: 1,
+            rationale: "The correct spelling is 'Maintenance'."
+          },
+          {
+            id: 906,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Miscellaneous", "Miscelaneous", "Miscellanious", "Miselaneous"],
+            answer: 0,
+            rationale: "The correct spelling is 'Miscellaneous' (double l)."
+          },
+          {
+            id: 907,
+            subject: "english",
+            q: "Fill in the blank: 'He is highly proficient ____ spoken English.'",
+            options: ["at", "in", "with", "on"],
+            answer: 1,
+            rationale: "The adjective 'proficient' is standardly complemented by the preposition 'in' ('proficient in')."
+          },
+          {
+            id: 908,
+            subject: "english",
+            q: "Fill in the blank: 'The guard prevented him ____ entering the exam hall.'",
+            options: ["to", "from", "against", "for"],
+            answer: 1,
+            rationale: "The verb 'prevent' requires 'from' followed by a gerund ('prevented him from entering')."
+          },
+          {
+            id: 909,
+            subject: "english",
+            q: "Choose the correct Passive Voice: 'Someone stole my watch yesterday.'",
+            options: [
+              "My watch was stolen yesterday.",
+              "My watch is stolen yesterday.",
+              "My watch had stolen yesterday.",
+              "My watch was being stolen yesterday."
+            ],
+            answer: 0,
+            rationale: "When the agent is indefinite ('someone'), it is omitted in passive: 'My watch was stolen yesterday.'"
+          },
+          {
+            id: 910,
+            subject: "english",
+            q: "Choose the grammatically CORRECT sentence:",
+            options: [
+              "One of my friends are a doctor.",
+              "One of my friends is a doctor.",
+              "One of my friend is a doctor.",
+              "One of my friends were a doctor."
+            ],
+            answer: 1,
+            rationale: "The subject 'One' is singular; hence 'One of my friends is a doctor.'"
+          },
+
+          // General Knowledge (11-18)
+          {
+            id: 911,
+            subject: "gk",
+            q: "In which year was the historic Objectives Resolution passed by the Constituent Assembly of Pakistan?",
+            options: ["1947", "1948", "1949", "1956"],
+            answer: 2,
+            rationale: "The Objectives Resolution was proposed by Liaquat Ali Khan and adopted on March 12, 1949."
+          },
+          {
+            id: 912,
+            subject: "gk",
+            q: "The ancient defensive Kot Diji Fort is situated in which district of Sindh?",
+            options: ["Khairpur", "Sukkur", "Hyderabad", "Shikarpur"],
+            answer: 0,
+            rationale: "Kot Diji Fort (Fort Ahmadabad) was built between 1785 and 1795 by Mir Sohrab Khan Talpur in Khairpur."
+          },
+          {
+            id: 913,
+            subject: "gk",
+            q: "Which East Asian country is historically celebrated as the 'Land of the Rising Sun'?",
+            options: ["China", "Japan", "South Korea", "Thailand"],
+            answer: 1,
+            rationale: "Japan is named Nippon/Nihon in Japanese, literally meaning 'sun origin'."
+          },
+          {
+            id: 914,
+            subject: "gk",
+            q: "What is the official National Animal of Pakistan?",
+            options: ["Bengal Tiger", "Markhor (Wild Goat)", "Snow Leopard", "Camel"],
+            answer: 1,
+            rationale: "The Markhor (Capra falconeri) is the national animal of Pakistan."
+          },
+          {
+            id: 915,
+            subject: "gk",
+            q: "The first major armed battle fought between Muslims and the Quraysh took place at Badr in:",
+            options: ["1 AH", "2 AH (624 AD)", "5 AH", "8 AH"],
+            answer: 1,
+            rationale: "The Battle of Badr took place on 17 Ramadan 2 AH (March 624 AD)."
+          },
+          {
+            id: 916,
+            subject: "gk",
+            q: "Who was the graphic designer of the official National Flag of Pakistan?",
+            options: ["Hafeez Jalandhari", "Amiruddin Kidwai", "Choudhry Rahmat Ali", "Abdur Rahman Chughtai"],
+            answer: 1,
+            rationale: "Master Amiruddin Kidwai designed the green-and-white national flag of Pakistan."
+          },
+          {
+            id: 917,
+            subject: "gk",
+            q: "What is the official currency of the United Kingdom?",
+            options: ["Euro", "Pound Sterling", "Dollar", "Franc"],
+            answer: 1,
+            rationale: "The British Pound Sterling (GBP) is the currency of the UK."
+          },
+          {
+            id: 918,
+            subject: "gk",
+            q: "The headquarters of the International Court of Justice (ICJ) is situated in:",
+            options: ["Geneva, Switzerland", "New York, USA", "The Hague, Netherlands", "Paris, France"],
+            answer: 2,
+            rationale: "The ICJ sits at the Peace Palace in The Hague, Netherlands."
+          },
+
+          // General Science (19-25)
+          {
+            id: 919,
+            subject: "science",
+            q: "Which vitamin is chemically termed Retinol, deficiency of which leads to night blindness?",
+            options: ["Vitamin A", "Vitamin B1", "Vitamin D", "Vitamin E"],
+            answer: 0,
+            rationale: "Vitamin A (Retinol) is essential for rhodopsin synthesis in the retina; its deficiency causes nyctalopia (night blindness)."
+          },
+          {
+            id: 920,
+            subject: "science",
+            q: "What is the approximate speed of light in a vacuum in standard scientific notation?",
+            options: ["3.0 x 10⁶ m/s", "3.0 x 10⁸ m/s", "3.0 x 10¹⁰ m/s", "3.0 x 10⁴ m/s"],
+            answer: 1,
+            rationale: "The speed of light in vacuum is defined as $c = 3 \\times 10^8$ m/s ($299,792,458$ m/s)."
+          },
+          {
+            id: 921,
+            subject: "science",
+            q: "Chemically, the reddish-brown substance known as 'Rust' on iron objects is:",
+            options: ["Pure Iron oxide", "Hydrated Iron(III) oxide", "Iron sulfide", "Iron carbonate"],
+            answer: 1,
+            rationale: "Rust forms when iron reacts with oxygen and water, creating hydrated iron(III) oxide ($Fe_2O_3 \\cdot nH_2O$)."
+          },
+          {
+            id: 922,
+            subject: "science",
+            q: "Which major part of the human brain maintains bodily posture, equilibrium, and muscular coordination?",
+            options: ["Cerebrum", "Cerebellum", "Medulla oblongata", "Hypothalamus"],
+            answer: 1,
+            rationale: "The cerebellum (hindbrain) coordinates motor movements and maintains balance."
+          },
+          {
+            id: 923,
+            subject: "science",
+            q: "Which gas turns clear lime water milky due to the formation of insoluble calcium carbonate precipitate?",
+            options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+            answer: 1,
+            rationale: "$CO_2$ reacts with limewater ($Ca(OH)_2$) to precipitate insoluble white $CaCO_3$."
+          },
+          {
+            id: 924,
+            subject: "science",
+            q: "In physics, the rate at which electrical or mechanical work is done is termed:",
+            options: ["Energy", "Momentum", "Power", "Torque"],
+            answer: 2,
+            rationale: "Power is defined as Work done per unit time ($P = W/t$) and is measured in Watts."
+          },
+          {
+            id: 925,
+            subject: "science",
+            q: "What is the SI unit used for measuring the frequency of sound and electromagnetic waves?",
+            options: ["Decibel", "Hertz (Hz)", "Meter", "Pascal"],
+            answer: 1,
+            rationale: "One Hertz represents one complete oscillation or cycle per second."
+          }
+        ]
+      },
+
+      {
+        id: 10,
+        title: "Test 10: High-Yield Model Paper 3",
+        source: "Predictive Model Paper 3 (Same Pattern & Difficulty)",
+        type: "model_paper",
+        tag: "Created Model",
+        desc: "Advanced preparation covering high-frequency Sindh entry test questions.",
+        questions: [
+          // English (1-10)
+          {
+            id: 1001,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: METICULOUS",
+            options: ["Careless", "Precise / Thorough", "Hasty", "Weak"],
+            answer: 1,
+            rationale: "Meticulous implies extreme care and precision in treating details."
+          },
+          {
+            id: 1002,
+            subject: "english",
+            q: "Choose the word most SIMILAR in meaning to: PERSEVERE",
+            options: ["Surrender", "Persist / Keep going", "Hesitate", "Quit"],
+            answer: 1,
+            rationale: "Persevere means to continue in a course of action despite difficulties or lack of success."
+          },
+          {
+            id: 903,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: DILIGENT",
+            options: ["Hardworking", "Careful", "Lazy / Idle", "Active"],
+            answer: 2,
+            rationale: "Diligent means showing steady care and effort; lazy or idle is its direct opposite."
+          },
+          {
+            id: 1004,
+            subject: "english",
+            q: "Choose the word OPPOSITE in meaning to: ANONYMOUS",
+            options: ["Nameless", "Unknown", "Identified / Named", "Secret"],
+            answer: 2,
+            rationale: "Anonymous means not identified by name; named/identified is its antonym."
+          },
+          {
+            id: 1005,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Harassment", "Harrassment", "Harassmant", "Harasment"],
+            answer: 0,
+            rationale: "The correct spelling is 'Harassment' (one 'r', two 's's)."
+          },
+          {
+            id: 1006,
+            subject: "english",
+            q: "Choose the word that is SPELLED CORRECTLY:",
+            options: ["Millenium", "Milenium", "Millennium", "Meleneum"],
+            answer: 2,
+            rationale: "The correct spelling is 'Millennium' (double 'l' and double 'n')."
+          },
+          {
+            id: 1007,
+            subject: "english",
+            q: "Fill in the blank: 'He apologized ____ the professor for coming late.'",
+            options: ["with", "to", "for", "against"],
+            answer: 1,
+            rationale: "One apologizes 'to' a person 'for' a mistake."
+          },
+          {
+            id: 1008,
+            subject: "english",
+            q: "Fill in the blank: 'The examiner was very pleased ____ his performance.'",
+            options: ["from", "at", "with", "by"],
+            answer: 2,
+            rationale: "The adjective 'pleased' takes the preposition 'with' when referring to a person or results."
+          },
+          {
+            id: 1009,
+            subject: "english",
+            q: "Choose the correct Passive Voice for: 'Who wrote this essay?'",
+            options: [
+              "By whom was this essay written?",
+              "Who was written this essay?",
+              "By whom this essay was written?",
+              "Whom wrote this essay?"
+            ],
+            answer: 0,
+            rationale: "'Who' changes to 'By whom + auxiliary verb + object + V3': 'By whom was this essay written?'"
+          },
+          {
+            id: 1010,
+            subject: "english",
+            q: "Complete the conditional sentence: 'If it rains tomorrow, we ____ the outdoor match.'",
+            options: [
+              "cancel",
+              "will cancel",
+              "would cancel",
+              "had canceled"
+            ],
+            answer: 1,
+            rationale: "First conditional rule: If + Present Simple ('it rains'), Main clause uses Will + base verb ('will cancel')."
+          },
+
+          // General Knowledge (11-18)
+          {
+            id: 1011,
+            subject: "gk",
+            q: "Which mountain pass connects Peshawar and Mardan with the Swat and Chitral valleys?",
+            options: ["Bolan Pass", "Malakand Pass", "Khyber Pass", "Karakoram Pass"],
+            answer: 1,
+            rationale: "Malakand Pass connects Peshawar with the Swat and Dir/Chitral regions."
+          },
+          {
+            id: 1012,
+            subject: "gk",
+            q: "Who was appointed as the very first President of the Islamic Republic of Pakistan in 1956?",
+            options: ["Major General Iskander Mirza", "Ayub Khan", "Liaquat Ali Khan", "Ghulam Muhammad"],
+            answer: 0,
+            rationale: "Iskander Mirza became the first President of Pakistan upon the promulgation of the 1956 Constitution."
+          },
+          {
+            id: 1013,
+            subject: "gk",
+            q: "The scenic Gorakh Hill Station in Dadu District, Sindh, is elevated in which mountain range?",
+            options: ["Kirthar Mountain Range", "Sulaiman Range", "Safed Koh", "Salt Range"],
+            answer: 0,
+            rationale: "Gorakh Hill (~5,688 ft elevation) is situated in the Kirthar Mountains in Sindh."
+          },
+          {
+            id: 1014,
+            subject: "gk",
+            q: "What is the total number of verses (Ayahs) in the Holy Quran?",
+            options: ["6,236", "6,666", "7,000", "5,555"],
+            answer: 0,
+            rationale: "The standard Kufic numbering accepted worldwide contains exactly 6,236 verses."
+          },
+          {
+            id: 1015,
+            subject: "gk",
+            q: "The strategic Suez Canal in Egypt connects the Mediterranean Sea directly with the:",
+            options: ["Black Sea", "Red Sea", "Persian Gulf", "Baltic Sea"],
+            answer: 1,
+            rationale: "Constructed in 1869, the Suez Canal connects the Mediterranean Sea to the Red Sea."
+          },
+          {
+            id: 1016,
+            subject: "gk",
+            q: "The shrine of the celebrated Sufi poet Sachal Sarmast (the 'Haft-Zaban' poet) is located at:",
+            options: ["Bhit Shah", "Daraza Sharif (Khairpur)", "Sehwan Sharif", "Rani Kot"],
+            answer: 1,
+            rationale: "Sachal Sarmast is buried at Daraza Sharif in Khairpur District, Sindh."
+          },
+          {
+            id: 1017,
+            subject: "gk",
+            q: "Which ocean is both the largest and the deepest ocean on planet Earth?",
+            options: ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
+            answer: 2,
+            rationale: "The Pacific Ocean covers over 30% of the Earth's surface and contains the deepest point: Challenger Deep in the Mariana Trench."
+          },
+          {
+            id: 1018,
+            subject: "gk",
+            q: "Which landmark constitutional amendment passed in 1974 defined non-Muslim status for Qadianis/Ahmadis in Pakistan?",
+            options: ["1st Amendment", "2nd Constitutional Amendment", "8th Amendment", "18th Amendment"],
+            answer: 1,
+            rationale: "The Second Amendment to the 1973 Constitution of Pakistan was enacted in September 1974."
+          },
+
+          // General Science (19-25)
+          {
+            id: 1019,
+            subject: "science",
+            q: "The biological process by which green plants utilize solar energy, water, and CO2 to synthesize glucose is:",
+            options: ["Respiration", "Photosynthesis", "Transpiration", "Fermentation"],
+            answer: 1,
+            rationale: "Photosynthesis: $6CO_2 + 6H_2O + \\text{light} \\rightarrow C_6H_{12}O_6 + 6O_2$."
+          },
+          {
+            id: 1020,
+            subject: "science",
+            q: "What is commercially and scientifically known as 'Dry Ice'?",
+            options: ["Liquid nitrogen", "Solid Carbon Dioxide ($CO_2$)", "Frozen methane", "Heavy water"],
+            answer: 1,
+            rationale: "Dry ice is solid carbon dioxide, sublimating directly from solid to gas at -78.5°C."
+          },
+          {
+            id: 1021,
+            subject: "science",
+            q: "Which type of mirror is universally mounted as a driver's rear-view side mirror in vehicles?",
+            options: ["Concave mirror", "Plane mirror", "Convex mirror", "Parabolic mirror"],
+            answer: 2,
+            rationale: "Convex mirrors produce virtual, erect, diminished images that give drivers a wider field of view."
+          },
+          {
+            id: 1022,
+            subject: "science",
+            q: "What hydrocarbon gas constitutes over 85–90% of Pakistani Sui Natural Gas (CNG)?",
+            options: ["Ethane", "Propane", "Methane ($CH_4$)", "Butane"],
+            answer: 2,
+            rationale: "Methane ($CH_4$) is the chief constituent of piped natural gas in Pakistan."
+          },
+          {
+            id: 1023,
+            subject: "science",
+            q: "Which abdominal organ contains the Islets of Langerhans that produce the hormone Insulin?",
+            options: ["Liver", "Gallbladder", "Pancreas", "Spleen"],
+            answer: 2,
+            rationale: "The beta cells of the endocrine pancreas synthesize and secrete insulin to regulate blood glucose."
+          },
+          {
+            id: 1024,
+            subject: "science",
+            q: "The thermal transfer of heat through fluids (liquids or gases) via physical molecular circulation currents is called:",
+            options: ["Conduction", "Convection", "Radiation", "Insulation"],
+            answer: 1,
+            rationale: "Convection involves the actual bulk movement of warmer, less dense fluid rising and colder, denser fluid sinking."
+          },
+          {
+            id: 1025,
+            subject: "science",
+            q: "What is the basic physical and functional unit of biological heredity passed from parent to offspring?",
+            options: ["Ribosome", "Gene", "Centrosome", "Amino acid"],
+            answer: 1,
+            rationale: "A gene is a distinct sequence of DNA nucleotides that codes for a specific protein product or biological trait."
+          }
+        ]
+      }
+    ];
+
